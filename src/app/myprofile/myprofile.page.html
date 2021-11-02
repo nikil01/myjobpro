@@ -1,0 +1,72 @@
+<ion-content class="ion-padding">
+    <div class="title">
+      <h4>Myprofile</h4>
+      <p></p>
+    </div>
+  <div>
+     
+      <ion-label position="stacked">Personnel Details</ion-label><br>
+      <ion-input placeholder="First Name" class="primary-input"></ion-input>
+      <ion-input placeholder="Last Name" class="primary-input"></ion-input>
+      <ion-item>
+        <ion-label>Gender</ion-label>
+        <ion-select value="male">
+          <ion-select-option value="male">MALE</ion-select-option>
+          <ion-select-option value="female">FEMALE</ion-select-option>
+        </ion-select>
+      </ion-item>
+  
+      <ion-input placeholder="Email" type="Email"class="primary-input"></ion-input>
+      <ion-input placeholder="Mobile no" type="tel"class="primary-input"></ion-input>
+      <ion-datetime placeholder="Date of Birth"class="primary-input"(ionchange)="calcage"[(ngModel)]="selectedate"[max]="today"></ion-datetime>
+     
+        <ion-item>
+            <ion-label position="stacked">Permanent Address</ion-label><br>
+            <ion-input placeholder="Address Line 1"class="primary-input"></ion-input>
+            <ion-input placeholder="Address Line 2"class="primary-input"></ion-input>
+            <ion-input placeholder="City"class="primary-input"></ion-input>
+            <ion-input placeholder="State"class="primary-input"></ion-input>
+            <ion-input placeholder="Zip Code"class="primary-input"></ion-input>
+        
+            <ion-label position="stacked">Corresponding Address</ion-label><br>
+            <ion-input placeholder="Address Line 1"class="primary-input"></ion-input>
+            <ion-input placeholder="Address Line 2"class="primary-input"></ion-input>
+            <ion-input placeholder="City"class="primary-input"></ion-input>
+            <ion-input placeholder="State"class="primary-input"></ion-input>
+            <ion-input placeholder="Zip Code"class="primary-input"></ion-input>
+          
+            <ion-label position="stacked">Educational Details</ion-label><br>
+            <ion-input placeholder="degreee"class="primary-input"></ion-input>
+            <ion-input placeholder="course"class="primary-input"></ion-input>
+            <ion-input placeholder="name of college"class="primary-input"></ion-input>
+            <ion-input placeholder="university name"class="primary-input"></ion-input>
+            <ion-input placeholder="year of joining"class="primary-input"></ion-input>
+            <ion-input placeholder="year of passing"class="primary-input"></ion-input>
+            <ion-input placeholder="percentage"class="primary-input"></ion-input>
+
+           
+            <ion-label position="fixed">langauge known</ion-label>
+            <ion-textarea placeholder="language known"></ion-textarea><br>
+            <ion-label position="stacked">About Profile</ion-label>
+            <ion-textarea placeholder="profile description"></ion-textarea><br>
+         <ion-item>
+            <ion-label position="stacked">career profile</ion-label><br>
+            <ion-input placeholder="Role"class="primary-input"></ion-input>
+            <ion-input placeholder="Functional Area"class="primary-input"></ion-input>
+            <ion-input placeholder="Industry"class="primary-input"></ion-input>
+            <ion-input placeholder="Desired Job Type"class="primary-input"></ion-input>
+            <ion-input placeholder="Desired Employment"class="primary-input"></ion-input>
+            <ion-input placeholder="Desired Location"class="primary-input"></ion-input>
+            <ion-input placeholder="Desired Salary"class="primary-input"></ion-input>
+         </ion-item>
+         <ion-label position="stacked">projects</ion-label>
+            <ion-textarea placeholder="profile description"></ion-textarea><br>
+          
+         </ion-item>
+         
+  </div>
+    
+  
+    <div class="ion-margin-top">
+      <ion-button expand="block"   routerLink="/home" routerDirection="forward">Submit</ion-button>
+    </div>
